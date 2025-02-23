@@ -1,0 +1,71 @@
+**# Final Project Plan: Are U Query-ous?**
+
+## **1. Scope**
+
+### **1.1 High-Level Description**
+The project "Are U Query-ous?" is a web-based **geo-analytics** application designed to make **open data more accessible and insightful** for businesses, marketers, and researchers. The platform will allow users to interact with **geospatial datasets**, visualize **location-based trends**, and filter insights through **an interactive map**. The system will also integrate **AI-powered natural language queries** to make data retrieval intuitive.
+
+### **1.2 Requirements and Features**
+The application will consist of the following core features:
+✅ **Dynamic Map Visualizations**: Users can explore open data via interactive maps using **Leaflet.js** and React.
+✅ **Geospatial Data Filtering**: Users can filter locations based on criteria such as **business category, population density, and income levels**.
+✅ **AI Query Processing (Optional Feature)**: A natural language interface that allows users to ask business-related geo-queries (e.g., "Where is the best area to open a coffee shop?").
+✅ **Custom Polygon Rendering**: The system will display high-income and high-traffic zones based on **open data sources**.
+✅ **Real-Time Data Fetching**: The platform will fetch **open datasets** from sources like **Barcelona Open Data, INE (Instituto Nacional de Estadística), and OpenStreetMap (OSM)**.
+
+### **1.3 Complexity and Realism**
+This project is designed to **test full-stack development skills** (React, FastAPI, PostgreSQL/PostGIS) while remaining **achievable within one semester**. The scope balances complexity with feasibility, ensuring that key functionalities (data visualization, filtering, API integration) can be developed and tested effectively.
+
+---
+
+## **2. Technology Stack**
+
+### **Frontend**
+- **React.js + Leaflet.js**: For rendering the interactive map and user interface.
+- **Axios**: For making API requests to fetch geo-data.
+
+### **Backend**
+- **FastAPI (Python)**: API for serving geospatial data.
+- **PostgreSQL + PostGIS**: Storing and managing geospatial data.
+- **Docker**: Containerization for database and backend services.
+
+### **Data Sources**
+- **Barcelona Open Data**: Foot traffic, demographic, and economic data.
+- **INE Spain**: Population density and socio-economic indicators.
+- **OpenStreetMap**: Business locations and street data.
+
+### **Deployment & Development Tools**
+- **GitHub Codespaces**: Cloud-based development environment.
+- **Vercel (Frontend)** / **Render (Backend)**: Free hosting for deployment.
+- **Docker Compose**: Managing database and API services.
+
+---
+
+## **3. Schedule and Milestones**
+
+### **3.1 Semester Timeline (Aligned with CAT Deadlines)**
+| **Task** | **Start Date** | **End Date** | **Duration** | **Milestone** |
+|--------------|--------------|------------|------------|------------|
+| Research & Data Collection | 19 Feb | 04 Mar | 2 weeks | **CAT1 - Project Plan Submission** |
+| Backend Setup (FastAPI + PostGIS) | 05 Mar | 15 Mar | 1.5 weeks |  |
+| API Development | 15 Mar | 01 Apr | 2.5 weeks | **CAT2 - Design Phase Submission** |
+| Frontend Setup (React + Leaflet) | 02 Apr | 15 Apr | 2 weeks |  |
+| Integrate API with Frontend | 16 Apr | 30 Apr | 2 weeks |  |
+| Testing & Debugging | 01 May | 06 May | 1 week | **CAT3 - Core Implementation Submission** |
+| Final Adjustments & Report Writing | 07 May | 03 Jun | 3.5 weeks | **CAT4 - Final Submission** |
+| Submission & Final Presentation | 04 Jun | 10 Jun | 1 week | **CAT5 - Final Presentation** |
+
+### **3.2 Milestones**
+✅ **M1: Backend API Ready (01 Apr)** - The FastAPI service should return valid geo-data from PostGIS.
+✅ **M2: Interactive Map Ready (15 Apr)** - The frontend should display map data correctly with filtering.
+✅ **M3: AI Query System (Optional) (30 Apr)** - AI query processing integration.
+✅ **M4: Final System Review (03 Jun)** - Testing and preparing final submission.
+✅ **M5: Presentation Completion (10 Jun)** - Final video presentation with demonstration.
+
+---
+
+## **4. Conclusion**
+This project represents a **real-world business application** that enables **data-driven decision-making** for geo-marketing and location analysis. By combining **geospatial databases, interactive mapping, and AI-based queries**, this platform will provide **valuable insights** to users without requiring technical expertise in GIS.
+
+The development plan ensures **incremental progress**, with major functionalities completed **before submission deadlines**, making the project both realistic and innovative.
+

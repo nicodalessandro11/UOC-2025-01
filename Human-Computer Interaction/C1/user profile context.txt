@@ -1,0 +1,62 @@
+Human-Computer Interaction
+PID_00284426
+
+Open modal
+Home Methods
+User profile
+Methods
+
+Stage
+
+Research
+Definition
+Generation
+Assessment
+Type
+Quantitative
+Qualitative
+With users
+Expert
+Classification
+Duration
+Medium
+Difficulty
+Medium
+Expertise
+Basic
+Participants
+Few
+What is it?
+“To design for everyone is to design for no one”. This is one of the principles of human-centred design. This is not to say that the product design is not useful to everyone. What it means is that, in the process of analysis, conceptualization and development, a smaller group of people should be focused on. In this way, it will be ensured that the product meets – at the very least – the needs of this group.
+
+The concept of user profile, or profiles, is based on this principle. In order to design, the target group or target audience must be defined, and this is done by selecting a set of features that allow people to be separated into multiple groups. For example, a common separation of the population in other disciplines is according to sociodemographic characteristics, such as gender or age. As well as that, in human-centred design, user profiles are more comprehensive and often include information such as needs and goals, or behaviour.
+
+Materials
+The specific method of profiling – or creating profiles – chosen will define the necessary materials. It may be that there are already some initial profiles that need to be completed, adding, for example, information about behaviour and needs. It may also be that a more rigorous profiling is opted for, based on qualitative and quantitative methods.
+
+When?
+Recovering the initial maxim – “to design for everyone is to design for no one” – user profiles have to be used from the start of the project and in any human-centred design process. Without these profiles, it is very easy for the team to make the mistake of designing for themselves or for each person on the team to have a different mental model of who the users are.
+
+How?
+The simplest and least expensive way is to define user profiles among the work team. Thus, everyone can define one or more proto-personas, for example, and then put them all together. These user profiles will not be based on data about users, but at least they will allow the whole team to have a common mental model and that everyone works with the same profiles in mind.
+
+The proto-personas are typical of the Lean UX methodology. To define these profiles, a template that consists of four quadrants is usually used: 1) name and drawing of a representative of the persona in that profile; 2) list of behaviours; 3) demographic characteristics, and 4) needs and objectives.
+
+
+
+At the other end of profiling would be a process of combining quantitative and qualitative methodologies to segment the population and define groups of users based on data. The level of experience required to create this type of profile is much higher and more costly, since it is necessary to master the design of surveys, the analysis of statistical data, the feedback between quantitative and qualitative data, etc.
+
+Advantages
+Share among the entire work team a common mental model of what the target user profiles are for the product being designed.
+To be able to delve into the characteristics and needs of the target audience to guide the conceptualization of the product and work from the beginning to put people at the centre of the design process.
+Select the right users. This advantage is key, as many DCU methods require user involvement. To do this correctly, participants who belong to the target user profile must always be selected and included.
+The profiling of users can be adapted to the typology of the project and its temporal and economic limitations.
+Drawbacks
+A poor definition of user profiles can lead to erroneous design decisions.
+User profiles must be defined by project or product since the information that is collected is always biased by the typology of what is designed.
+User profiles need to be updated often and, ideally, iteratively.
+Notes
+Profiling, or creating user profiles, is a neglected stage in many projects. It is also what makes a project be focused on people or not, on the people to whom the product is directed. The designer’s task is to ensure that user profiles are defined and used throughout the project. It is also key that both the work team and the public of interest know them and agree on the fact that they are the target audience of the product.
+
+References
+“Using Proto-Personas for Executive Alignment”. [Accessed on 25 January 2021].
