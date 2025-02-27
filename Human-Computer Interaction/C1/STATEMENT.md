@@ -50,7 +50,7 @@ Throughout the semester, the mentioned applications will be analyzed, and you wi
 
 2. **Accessible Route Planning**: Implement filters that prioritize **routes with accessible features**, such as **functional elevators and ramps**, while avoiding **paths that include stairs**.
 
-3. **Interactive Navigation**: Provide **step-by-step navigation with multimodal options (visual, auditory, and haptic)** adapted to each user's capabilities.
+3. **Interactive Navigation**: Provide **step-by-step navigation with multimodal options (visual, auditory, and haptic)** adapted to each user’s capabilities.
 
 4. **Configurable Alerts**: Offer **customizable notifications** to alert users about **route changes, out-of-service access points, and other relevant incidents** tailored to individual preferences.
 
@@ -62,7 +62,7 @@ With these requirements in mind, your **accessible public transport application 
 
 ### 📍 RESEARCH
 
-We have said that **User-Centered Design (UCD)** allows us to better understand users and design products and services that meet their needs. In this philosophy, it is necessary to involve the user in all stages of a product's development, from conceptualization to evaluation, including development.
+We have said that **User-Centered Design (UCD)** allows us to better understand users and design products and services that meet their needs. In this philosophy, it is necessary to involve the user in all stages of a product’s development, from conceptualization to evaluation, including development.
 
 The goal of UCD is to **create products that people find useful and usable**; that is, to meet their needs while taking into account their characteristics.
 
@@ -91,7 +91,7 @@ Population segmentation or grouping is commonly done based on socio-demographic 
 
 ### 2. Competition Research
 
-The [**Benchmarking**](https://human-computer-interaction.aula.uoc.edu/benchmarking/) technique involves a detailed evaluation of the competing products that we are developing, but from the end-user's perspective. The main purpose is to **understand the strengths, distinctive features, and prevalent design trends** in the market we are targeting.
+The [**Benchmarking**](https://human-computer-interaction.aula.uoc.edu/benchmarking/) technique involves a detailed evaluation of the competing products that we are developing, but from the end-user’s perspective. The main purpose is to **understand the strengths, distinctive features, and prevalent design trends** in the market we are targeting.
 
 [**Benchmarking**](https://human-computer-interaction.aula.uoc.edu/benchmarking/) is not limited only to direct competitors. In fact, it can also be very revealing to analyze products that, although not directly competing with ours, offer similar functionalities. This **comparative approach** is an excellent starting point for identifying key elements that can significantly improve the user experience.
 
@@ -103,7 +103,7 @@ This technique is more than a simple comparison of features; it is a profound in
 
 ### 3. Basic Aspects of Human-Computer Interaction
 
-**HCI** is a field of study that focuses on the creation and design of interfaces between users and computer systems. In HCI, it's essential to understand basic concepts such as:
+**HCI** is a field of study that focuses on the creation and design of interfaces between users and computer systems. In HCI, it’s essential to understand basic concepts such as:
 
 - [**Metaphor**](https://human-computer-interaction.aula.uoc.edu/metaphor/), which helps users relate the unknown (the digital interface) to familiar experiences from the real world.
 - [**Affordance**](https://human-computer-interaction.aula.uoc.edu/affordance/), which refers to the characteristics of an object that suggest how it can be used.
@@ -150,7 +150,7 @@ Your analysis should be detailed, showing how each application demonstrates the 
 
 👉 As part of the **research phase closure**, it is essential to reflect on the **lessons learned** and how the activities have prepared you for the following stages of the project. Below, select **one (1)** of the following reflection questions and **record a video of up to 3 minutes** with your response.
 
-- What did you learn about users' needs and challenges when creating the user profiles?
+- What did you learn about users’ needs and challenges when creating the user profiles?
 - How do you think analyzing existing applications (benchmarking) influences the quality of a new interface design?
 - Which example was the most difficult toF identify when working with HCI concepts and why?
 - What did you discover about interface customization that you had not considered before?
@@ -167,53 +167,3 @@ To complete the submission of this activity, please attach the final document to
 The evaluation will take into account the presentation of the document, as well as its structure (cover, index of contents, development of the answers), legibility (adequate font for reading and body size of 12 points) and organization (numbered pages, heading with the name of the student and the degree course). Writing, clarity, expression and spelling will be valued.
 
 ✏️ As for the evaluation criteria for each task, they are described in the [Challenge 1 rubric](https://aula.uoc.edu/courses/50236/assignments/585929).
-
-# Statement Point 1: Assistant's Role and Capabilities
-
-## Core Identity
-
-The assistant is an intelligent programmer powered by Claude 3.5 Sonnet, designed to provide expert coding assistance and technical guidance.
-
-## Primary Functions
-
-- Answering programming-related questions
-- Providing code solutions
-- Debugging assistance
-- Explaining technical concepts
-- Offering best practices and recommendations
-
-## Key Characteristics
-
-1. **Technical Expertise**
-
-   - Proficient in multiple programming languages
-   - Understanding of software development principles
-   - Knowledge of current development practices
-
-2. **Communication Style**
-
-   - Clear and concise explanations
-   - Professional yet approachable tone
-   - Ability to adapt explanations to user's expertise level
-
-3. **Problem-Solving Approach**
-   - Systematic analysis of issues
-   - Practical and efficient solutions
-   - Context-aware recommendations
-
-## Interaction Guidelines
-
-- Responds to all programming-related queries
-- Maintains helpful and supportive demeanor
-- Focuses on providing actionable solutions
-- Clarifies ambiguities when needed
-
-## Limitations
-
-- Acknowledges when a question is outside its scope
-- Transparent about uncertainties
-- Refers to documentation when appropriate
-
-## Purpose
-
-The primary goal is to assist users in their programming journey by providing reliable, accurate, and helpful technical guidance.
