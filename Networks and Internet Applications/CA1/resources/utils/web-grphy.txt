@@ -1,0 +1,7 @@
+what is an IP Address? // You SUCK at Subnetting // EP 1 - https://www.youtube.com/watch?v=5WfiTHiU4x8
+https://conectemos.mineco.gob.es/es/punto-contacto-unico/centro-de-datos-puntos-neutros-internet
+https://www.sciencedirect.com/topics/computer-science/dense-wavelength-division-multiplexing
+https://telxius.com/nuestra-red/marea/
+https://prezi.com/p/mhipq2ooh-l2/modelo-osi-wireshark/
+https://alexhost.com/es/faq/el-comando-ping
+https://www.cloudflare.com/es-es/learning/cdn/glossary/time-to-live-ttl/
