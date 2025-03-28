@@ -1,0 +1,10 @@
+Description Module 4: Network Management
+When designing and deploying a network, the following six basic steps must be taken into account:
+
+Wire and hardware design selection.
+Installation of network hardware and operating system.
+Operating system configuration and application loading.
+Creating the user environment.
+Initialization of network management.
+Maintenance and monitoring of network activity.
+This module is intended to briefly address various aspects of the design and further development of a computer network. So, the module starts with a description of the elements that make it up and ends up defining, in a broad sense, the steps that need to be taken to connect a workstation to the network. It is not intended to make a comprehensive compilation of such a dense and heterogeneous subject matter but only to provide the administrator with some general criteria to help him start (and maintain) a task as complex as the one we described.

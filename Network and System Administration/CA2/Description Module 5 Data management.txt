@@ -1,0 +1,8 @@
+Description Module 5: Data management
+Currently, one of the great assets of all organizations is the information (we could also say data, even though we will already see the difference). This is the raw material of the computer system. Therefore, we need to know where it is, since computer networks connect all computers. We are in danger when data is scattered across all workstations in the organization. If this happens, we will not know what data we have or where we need to look for it.
+ 
+We will need to know where the information is backed up because in case of a disaster, the software can be reinstalled, but the organization has created the data, and it cannot be “bought” anywhere. Information is currently one of the most important assets, so it must be protected.
+ 
+It is also important to know where this data is because we can combine it to get new data about our organization.
+ 
+For management (and generally for the entire organization), having the right information on time enables the right decisions to be made in every situation at the right time.

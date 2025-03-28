@@ -1,0 +1,31 @@
+Outline and competencies CA4
+Assessable activity
+
+Individual
+
+Time
+
+50h
+
+Due to the increasing complexity of business processes that we can encounter today’s enterprises, which require IT infrastructure to be able to execute, it is common for system administrators to face new technological challenges. These challenges often cannot be solved with the tools they regularly use. That is, one of the most important challenges for system administrators, and IT in general, is knowing what new technologies are emerging, selecting the most suitable one to solve a particular problem, and finally learning how to use it in a self-paced way.
+
+Not having the skills and abilities to research new emerging technologies to select the most appropriate one to solve a problem would mean not being able to develop professionally, limiting options to promote.
+
+
+Related competencies
+Learning outcomes
+ 
+
+CT1 - Express themselves correctly and clearly in writing, demonstrating mastery of specific vocabulary in the field of software development both in the academic and professional environment.
+
+LR1: Search for new technologies and tools to solve a specific problem.
+
+LR2: Ability to self-train in a new specific technology.
+
+LR3: Discern which technology is the most appropriate to solve a problem.
+
+LR4: Propose new technologies to the management team to solve a problem.
+
+ 
+
+CB3 - Having the ability to gather and interpret relevant data (typically within their area of study) to make judgments that include a reflection on relevant topics of a social, scientific or ethical nature.

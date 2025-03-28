@@ -1,0 +1,14 @@
+Description Module 6: Web administration
+In this module, we will look at aspects related to web services and technologies linked to these services. Web services are client and server applications that communicate via the *World *Wide Web (WWW) Hypertext Transfer Protocol (HTTP). As described in *World *Wide Web *Consortium (W3C), web services provide standard interoperability between software applications running on various platforms and frameworks.
+
+To get started on the topic, we will look at what a website is, how it works, and what types of protocols and architecture we can find.
+
+We will discuss the different tasks and responsibilities that the webmaster or web administrator should have within the organization to ensure a minimum of quality when offering the services.
+
+Next, we’ll dive into more technical aspects of web application architecture and design that, while it may seem like a more programming aspect, it is also important to know as a systems administrator so you can provide and scale the resources you need and properly protect your organization’s infrastructure when delivering web applications.
+
+We will also explain what service is and what a service-oriented architecture (SOA) is. We will take a closer look at all the layers of abstraction available to this architecture and the web services mechanism that is one of the technologies that makes it possible to implement a service-oriented architecture.
+
+Finally, we will explain what is considered an evolution of SOA architecture: microservices architecture. This architecture implements a model based on small services that communicate very superficially with each other. Each microservice runs its own processes and deploys independently, typically with automated mechanisms. As a key part of this architecture, we will explain the containers and Docker platform, which has become very popular over the past few years.
+
+To finish with services, we will introduce the well-known DevOps methodology. The main objective sought with this methodology is to achieve better and more reliable products. The idea is based on unifying the two roles that so far worked in isolation (development and operations) so that they coordinate and collaborate, making production deployments faster and more frequent.

@@ -1,0 +1,9 @@
+Description Module 3: User Management
+In this module, we will focus on the user and topics related to:
+
+    Servers
+    Workstations
+    Software
+    Data
+    Incidents
+    Employees formation

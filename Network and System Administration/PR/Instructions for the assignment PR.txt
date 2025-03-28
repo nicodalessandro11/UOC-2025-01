@@ -1,0 +1,16 @@
+Instructions for the assignment PR
+Assessable activity
+
+Individual
+
+Time
+
+50h
+
+The final project is an individual and mandatory activity which will be developed during the course with a specific deadline.
+
+The purpose of the practice is to install a Linux server on a virtual machine hosted on your personal computer, using the virtualization software you choose from the many available, and perform a series of administration tasks on the system.
+
+The entire process must be documented in detail in a PDF report, which will be the document that you will deliver.
+
+The statement can be found in the attached document

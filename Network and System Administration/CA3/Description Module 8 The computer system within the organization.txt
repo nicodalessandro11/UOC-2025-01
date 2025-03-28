@@ -1,0 +1,8 @@
+Description Module 8: The computer system within the organization
+This module will discuss the IT manager and his relationship with the IT organization and department. Specifically, the type of decisions he needs to make and how he coordinates with the IT system administrator figure.
+
+The computer system is the tool, and the administrators, the figures that keep it running. But the IT manager is the figure that makes the decisions for the role of the IT system within the organization. He decides what users can do with the resources available and have a forward-looking view of the IT department's functionality within the entire organization at present and in the future.
+
+The IT manager must also manage aspects such as the strategic plan and IT security plan, which can now be implemented using standard methodologies.
+
+There are also some criteria throughout this module that can help make decisions, for example, when deciding on software deployment or how to act on security issues. Finally, agile methodologies for software improvement and implementation are presented.

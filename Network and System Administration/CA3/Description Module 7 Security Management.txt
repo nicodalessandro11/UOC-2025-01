@@ -1,0 +1,10 @@
+Description Module 7: Security Management
+The concept of computer security is diffuse and practically unreachable, so it will be preferable to focus our attention on what we could call reliability, understood as the guarantee of the quality of service of a system in the field of information and communication technologies (ICT).
+
+In this module, we will look at when this reliability can be compromised and the tools an administrator has available to implement defense measures to prevent, detect and respond appropriately when a security incident occurs.
+
+We will look at the nature of the elements that make up the most important threats: software errors, malicious code, denial-of-service attacks, intermediary attacks, and social engineering.
+
+One of the fundamental principles on which the safety design has to be supported is that an ICT system, considered as a whole, is as reliable as its weakest component. Therefore, a comprehensive view must consider the physical security of the server, operating systems, applications, data in any of its states (in transmission, in use when processing, or at rest when stored), network, and resources deployed to the cloud.
+
+It is crucial not to neglect the human factor: helping to review the processes, participate in the training plan and raising awareness of the organization’s people responsible for the importance of safety to obtain their commitment and support in the application of all the necessary measures, these are tasks that the system administrator must assume as a priority.
