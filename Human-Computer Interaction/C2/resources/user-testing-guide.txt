@@ -1,0 +1,132 @@
+Universitat Oberta
+de Catalunya
+
+en
+Get to know the Toolkit
+Guides
+Maps
+Help
+Input search
+Search
+Human-Computer Interaction
+PID_00284426
+
+Open modal
+User testing guide
+GUIDE
+
+Before beginning
+This guide extends the User Testing Guide. User testing is a technique that is part of a user-centred design process in the evaluation phase. Therefore, it can be applied from the earliest prototyping stage (sketching) and can be repeated throughout the design process, as many times as necessary and as resources permit.
+
+In the case of redesign projects (starting from a pre-existing project), it is highly recommended to carry out preliminary tests with users since these evaluation results can help define the bases of the new proposal.
+
+Preparation
+Defining the scope
+The first step when proposing a test with users is to define its focus, that is, why the evaluation is being carried out: what is its objective and what are the specific questions to be checked?
+
+It also has to be determined how the test will be carried out:
+
+In person, with the evaluator and the participant in the same location.
+Remotely, using online tools that allow remote testing.
+Defining the focus allows knowing how to plan the sessions and what to observe when they take place.
+
+Defining the profile of the participants and recruiting them
+The users who provide the most relevant information have similar characteristics to those of the personas in the project.
+
+In general terms, it is recommended that between seven and nine users participate in a test, since it is considered the ideal number for obtaining the greatest amount of relevant and non-repetitive information. However, this number has to be determined according to the conditions of each project and taking the number of defined personas into account. For the results to be meaningful, more than one participant per persona is required.
+
+Recruiting users for a test with users can involve a significant effort within the project, because the difficulty of finding participants with the required profiles adds to the complexity of the agenda management. To facilitate this process, several resources can be used:
+
+If the client has a database of its users, it can be used as a starting point for recruitment.
+If the project budget allows for it, the recruitment and planning process can be outsourced to specialized agencies (which are usually in the field of marketing and market research).
+Be that as it may, it is recommended not to perform more than three tests with users per day, since it requires a lot of attention from the evaluator; performing more could lead to tiredness and loss of observational ability.
+
+Defining the script for the sessions
+The evaluator must prepare a script or protocol that determines the steps to be followed in the session. To be efficient, the session would have to last less than an hour, as the user’s fatigue reduces his or her ability to answer tasks and questions.
+
+Although the content of the sessions can be made more flexible depending on the behaviour of the participant, it is important to start with a script that defines the following:
+
+Presentation. How the evaluator presents him- or herself and how he or she explains the research objective. It is important to guarantee the anonymity of the collected information and of the user who participates.
+Demographic questionnaire. Before starting the test, the user is briefly asked about demographic issues relevant to the project (age, gender, occupation, level of experience with technology, among others). Avoid including questions that are not relevant or overly personal.
+Consent form. In the event of the session being recorded, or of identifiable user data being used, the user must sign a consent form. If the user does not want to be recorded, the observation will have to be carried out without registration.
+Test tasks. Statement of the tasks that will be presented to the user. These tasks need to be written in such a way that they contextualize the situation and do not bias the results.
+For example, in the test of a website, posing a task such as “Look for a recipe with chicken” is incorrect, because it does not contextualize the situation (the user must perform a task for no specific reason). On the other hand, the word search can lead the user to see the search option, skewing the results directly .
+A better statement would be, “Tonight you have dinner guests, and you would like to find some recipe to prepare the chicken you bought at the market this Saturday. How would you do it?”
+Final questionnaire. At the end of the session, the user is asked some open questions on general and subjective matters: in general, what did he or she think of the prototype, whether he or she would improve anything in particular… In the end, it is highly recommended to ask if he or she would like to comment or add anything else; when the user speaks freely, he or she may reveal issues that had gone unnoticed.
+Retribution. If this has been established, the user is rewarded with a gift or with purchase vouchers. The end of the session is the time to do so. In any case, we must always thank the user for his or her participation.
+Development / execution
+Even though the user testing sessions follow the script established in the preparation phase, each session will be different because different users participate.
+
+Some fundamental guidelines must be taken into account:
+
+Breaking the ice with the user
+To act normally, users have to feel themselves to be in a trusted environment. The evaluator must make it obvious that they are not being put to the test, but rather that their participation is essential for improving the product or service in question.
+
+Set the tasks one by one
+The evaluator has to propose the tasks one by one, leaving time for the user to solve them. The next task must not be attempted until the one in progress is finished.
+
+A task can be terminated:
+
+When the user reaches the stated goal (success).
+When the user reaches what he or she thinks is the goal even though, in reality, it is not (false success).
+When the user declares that he or she does not know how to solve it after having tried (error).
+Do not intervene in user actions
+The evaluator must not give guidelines or explain to the user how to solve a task, even if tempted to do so. The objective is to observe how the user acts in order to improve the design, not to teach him or her to solve problems of a poor design.
+
+Observe the user and ask him or her to verbalize thoughts
+Checking if users can complete a task is as important as knowing how they do it and their thought process.
+
+Observing users’ gestures and listening to what they are thinking allows the evaluator to gather emotional questions and know if users are comfortable or confused, angry, tired or irritated.
+
+Ask questions
+The evaluator has to ask any question that is not clear to him or her or on which he or she needs additional information. Inference or drawing personal conclusions about the reasons why the user acts in a certain way should also be avoided. It is better to ask too many questions than not to ask enough.
+
+The questions have to be neutral and not contain suggestions or criticisms to avoid skewing the answers.
+
+Record the sessions
+It is highly advisable to record the sessions with a video camera, to ensure that they can be reviewed later.
+
+In the case of digital projects, there are tools that allow recording detailed issues such as the movement of the pointer (for example, Morae).
+
+In addition to the recording, the researcher must take notes of the most relevant issues. Good annotations will save a lot of time in reviewing the recordings.
+
+Analysis / Results
+Two types of fundamental data are obtained from the analysis of the sessions:
+
+Quantitative data
+They correspond to:
+
+The demographic data of the participants (collected in the prior questionnaire).
+The analysis of the results of the tasks:
+Success rate per task (for example, 50% success rate implies that only half of the participants have solved the task well).
+Average time per task (the average time it takes participants to complete the task).
+The ratio of errors and false successes (percentage of participants who have not been able to solve the task, or who have obtained a false success).
+Qualitative data
+Notes on the activities that users perform to try to solve a task.
+Notes about the user’s emotional attitude when trying to solve a task.
+Problems observed.
+Responses to open questions at the end of the session.
+As the collected data is reviewed, problems must be classified according to their severity:
+
+Critical: if not resolved, users will not be able to complete the task.
+Serious: many users will be frustrated if it is not solved, and may abandon using the product.
+Minor: the problem may cause discomfort, but it does not prevent the task from being performed; it can be solved later.
+The user testing report must include the following contents:
+
+Introduction. Basic information about the test: objectives, number of participants, where the sessions have been carried out, equipment used in the recording and evaluators who have participated.
+Methodology. Script of the test and demographic data of the users with whom the evaluation has been carried out. Their real identities will not be included, unless this has been stated from the outset and the participants have signed the consent form.
+Test results. Quantitative and qualitative data were collected during the sessions.
+Conclusions and recommendations. The collected data indicate issues to be resolved and good practices to be maintained in the design. It is recommended that the issues to be resolved are accompanied by recommendations on how to do this. The wording of this section should be executived, that is, clear, synthetic and structured in an agile way (the list format is usually the most recommended).
+Examples
+Fluid Engage
+The case of protocol (script) for the test of a mobile application and its corresponding results report.
+References
+Calvo-Fernández Rodríguez, Amaia; Ortega Santamaría, Sergio; Valls Sáez, Alicia. “User assessment methods” [online]. [Accessed on 25 January 2021].
+
+“Reporting Usability Test Results” [online]. Usability.gov. [Accessed on 25 January 2021].
+
+“Running a Usability Test” [online]. Usability.gov. [Accessed on 25 January 2021].
+
+uoc.edu
+
+The texts and images contained in this work are subject (unless otherwise stated) to an Attribution-ShareAlike (CC BY-SA) 3.0 Spain license. You are free to modify, reproduce, redistribute or publicly display any materials provided that you mention their author and their source (FUOC. Fundació per a la Universitat Oberta de Catalunya) and the derived work is subject to the same license as the original material. You can consult the complete license terms at https://creativecommons.org/licenses/by-sa/3.0/legalcode

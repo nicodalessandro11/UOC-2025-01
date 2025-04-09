@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Testing Surveys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .survey-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .survey-title {
+            background-color: #00cccc;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .option {
+            margin-bottom: 5px;
+        }
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .extra-question {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-height: 80px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Configurable Alerts Survey -->
+    <div class="survey-container">
+        <div class="survey-title">SURVEY: Configurable Alerts tasks</div>
+        
+        <div class="question">
+            1. Have you found it difficult to locate the alerts configuration?
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox" id="ca1-no" name="ca1" value="no">
+                    <label for="ca1-no">No, it was easy</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca1-little" name="ca1" value="little">
+                    <label for="ca1-little">A little</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca1-yes" name="ca1" value="yes">
+                    <label for="ca1-yes">Yes, it was difficult</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question">
+            2. Which alert types have you set up? (you can select multiple)
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox" id="ca2-service" name="ca2" value="service">
+                    <label for="ca2-service">Service disruptions</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca2-elevator" name="ca2" value="elevator">
+                    <label for="ca2-elevator">Elevator outages</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca2-route" name="ca2" value="route">
+                    <label for="ca2-route">Route changes</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca2-weather" name="ca2" value="weather">
+                    <label for="ca2-weather">Weather alerts</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question">
+            3. If you tried to set up notification preferences (visual, audio, haptic), did you find it difficult?
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox" id="ca3-no" name="ca3" value="no">
+                    <label for="ca3-no">No, it was easy</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca3-little" name="ca3" value="little">
+                    <label for="ca3-little">A little</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca3-yes" name="ca3" value="yes">
+                    <label for="ca3-yes">Yes, it was difficult</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question">
+            4. Were you able to test an alert successfully?
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox" id="ca4-yes-easy" name="ca4" value="yes-easy">
+                    <label for="ca4-yes-easy">Yes, it was easy</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca4-yes-difficult" name="ca4" value="yes-difficult">
+                    <label for="ca4-yes-difficult">Yes, but it was difficult</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca4-no" name="ca4" value="no">
+                    <label for="ca4-no">No, I could not test the alert</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question">
+            5. Did you find the alert settings easy to save?
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox" id="ca5-yes" name="ca5" value="yes">
+                    <label for="ca5-yes">Yes, it was easy</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca5-somewhat" name="ca5" value="somewhat">
+                    <label for="ca5-somewhat">Somewhat easy</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca5-no" name="ca5" value="no">
+                    <label for="ca5-no">No, it was difficult</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question">
+            6. Have you been able to complete all the tasks?
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox" id="ca6-yes" name="ca6" value="yes">
+                    <label for="ca6-yes">Yes</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca6-help" name="ca6" value="help">
+                    <label for="ca6-help">Yes, with a little help</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca6-no" name="ca6" value="no">
+                    <label for="ca6-no">No, I could not complete task(s) ___</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question">
+            7. Was there any action that you found difficult to locate?
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox" id="ca7-no" name="ca7" value="no">
+                    <label for="ca7-no">No</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca7-yes" name="ca7" value="yes">
+                    <label for="ca7-yes">Yes: _______________________</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question">
+            8. Have you encountered issues related to accessibility?
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox" id="ca8-contrast" name="ca8" value="contrast">
+                    <label for="ca8-contrast">Insufficient contrast</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca8-font" name="ca8" value="font">
+                    <label for="ca8-font">Font too small</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca8-icons-small" name="ca8" value="icons-small">
+                    <label for="ca8-icons-small">Icons too small</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca8-icons-close" name="ca8" value="icons-close">
+                    <label for="ca8-icons-close">Icons too close</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ca8-other" name="ca8" value="other">
+                    <label for="ca8-other">Others: _______________________</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="extra-question">
+            <div>Extra question:</div>
+            <div>After completing these tasks, what aspects of the alerts system do you think could be improved?</div>
+            <textarea placeholder="Type your answer here..."></textarea>
+        </div>
+    </div>
+</body>
+</html>
