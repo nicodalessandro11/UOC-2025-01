@@ -1,0 +1,84 @@
+Universitat Oberta
+de Catalunya
+
+Get to know the Toolkit
+Guides
+Maps
+Help
+Input search
+Search
+Human-Computer Interaction
+PID_00284426
+
+Open modal
+Home Methods
+User testing
+Methods
+
+Consult the guide
+Stage
+
+Research
+Definition
+Generation
+Assessment
+Type
+Quantitative
+Qualitative
+With users
+Expert
+Classification
+Duration
+Medium
+Difficulty
+High
+Expertise
+High
+Participants
+Medium
+What is it?
+User testing is a usability evaluation method that allows checking if the interfaces and interaction processes are well designed and if users encounter obstacles and difficulties to achieve their objectives.
+
+Tests with users can vary from the simple test with a single task and few users, to more complex tests, which evaluate a set of tasks with a significant volume of users distributed in different profiles. In addition, the tests can be very different depending on the type and modality used.
+
+Materials
+Digital: mindmap and content tree generation tools. Collaborative online tools for the generation of information structures.
+
+Physical: pencil, paper, post-its.
+
+When?
+The test with users is a method that allows evaluating the design from the prototypes. Therefore, it can be applied from the earliest prototyping stages (sketching) and can be repeated as many times as necessary and as resources permit.
+
+In the case of redesign projects (starting from a pre-existing project), it is highly recommended to carry out preliminary tests with users, since the results of this evaluation can help define the bases of the new proposal.
+
+It is advisable to perform at least one round of tests with users, although the optimal thing is to perform them each time a new version of the prototype is generated.
+
+How?
+To carry out a test with users, the following tasks must be performed:
+
+Definition of the scope of the evaluation.
+Definition of the profile of the participants and recruitment.
+Definition of the script of the sessions.
+Conducting the sessions.
+Analysis of results and elaboration of conclusions.
+Advantages
+The test with users allows evaluating the usability of an interface in a fairly reliable way to discover at which points the users will encounter obstacles or difficulties.
+Drawbacks
+The cost, especially that related to people (the time and travel of users and the experts involved). A technique that avoids this situation is the remote test, which allows the test to be performed remotely. The advantages of the remote test are that it is easier to recruit users, that the user does not lose the context of habitual use, and, therefore, that the test is not biased in this sense.
+It requires a technological infrastructure, both for the moderator of the test and in the user’s home, which can be complex and, depending on how it is, it may not allow carrying out some test protocols, such as overt thinking.
+Notes
+Tests with users can vary from the simple test with a single task and few users to more complex tests that evaluate a set of tasks with a significant number of users distributed among different profiles.
+In some cases, if time and/or resources are available, guerrilla tests can be done, which imply that the selection of participants and the choice of the place in which it is carried out are not as strict as in an orthodox test.
+User testing can be supplemented with user eye-tracking tools, so that the evaluator can know which areas of the screen the user is watching while performing a task. This provides valuable information on whether the gaze is orientated to relevant focuses of attention, or if changes need to be made in the design to accentuate specific elements.
+Using techniques with users does not imply that the designer has to literally apply what the users ask of him or her. However, it means collecting information to be analyzed and processed in order to get to the key ideas that will allow defining the project.
+Guides
+This content is expanded through the following guide: “User Testing Guide”.
+
+References
+Calvo-Fernández Rodríguez, Amaia; Ortega Santamaría, Sergio; Valls Saez, Alicia. “User assessment methods” [online]. [Accessed on 25 January 2021].
+
+“Running a Usability Test” [online]. Usability.gov. [Accessed on 25 January 2021].
+
+uoc.edu
+
+The texts and images contained in this work are subject (unless otherwise stated) to an Attribution-ShareAlike (CC BY-SA) 3.0 Spain license. You are free to modify, reproduce, redistribute or publicly display any materials provided that you mention their author and their source (FUOC. Fundació per a la Universitat Oberta de Catalunya) and the derived work is subject to the same license as the original material. You can consult the complete license terms at https://creativecommons.org/licenses/by-sa/3.0/legalcode
