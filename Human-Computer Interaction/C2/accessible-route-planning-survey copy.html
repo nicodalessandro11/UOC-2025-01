@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Testing Survey - Public Transport App Accessibility</title>
+    <title>User Testing Survey - Google Maps Accessibility</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -178,22 +178,27 @@
     <div class="container">
         <div class="header">
             <img src="uoc-logo.png" alt="UOC Logo" class="logo">
-            <h1>User Testing Survey - Public Transport App Accessibility</h1>
+            <h1>User Testing Survey - Google Maps Accessibility</h1>
         </div>
 
         <!-- Introduction -->
         <div class="introduction">
-            <h2>Introduction</h2>
+            <h4 class="survey-title">1. Introduction</h4>
             <p>Hello, and thank you for participating in this user testing session!</p>
             <p>Before we begin, I want to highlight that <strong>we are testing the application and not you</strong>.
                 There are no right or wrong answers, and your honest feedback is extremely valuable to us. This session
                 will help us understand how to improve public transportation applications to make them more accessible
                 and user-friendly.</p>
             <p>This session will take approximately 45-50 minutes, you only need to complete a few tasks using the
-                Public Transport App application and then complete the survey.</p>
+                Google Maps application and then complete the survey.</p>
 
-            <h3 class="section-title">Preliminary Questions</h3>
+            <h4 class="section-title">Preliminary Questions</h4>
             <p>First, I'd like to ask you a few simple questions:</p>
+
+            <div class="form-group">
+                <label for="user-age">Name:</label>
+                <input type="text" id="user-occupation" name="user-occupation">
+            </div>
 
             <div class="form-group">
                 <label for="user-age">Age:</label>
@@ -203,6 +208,29 @@
             <div class="form-group">
                 <label for="user-occupation">Occupation:</label>
                 <input type="text" id="user-occupation" name="user-occupation">
+            </div>
+
+            <div class="form-group">
+                <label for="device-type">Device Type:</label>
+                <select id="device-type" name="device-type">
+                    <option value="" disabled selected>Select device type</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="computer">Computer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="device-os">Operating System:</label>
+                <select id="device-os" name="device-os">
+                    <option value="" disabled selected>Select operating system</option>
+                    <!-- Mobile OS options -->
+                    <option value="android">Android</option>
+                    <option value="ios">iOS</option>
+                    <!-- Computer OS options -->
+                    <option value="windows">Windows</option>
+                    <option value="macos">macOS</option>
+                    <option value="linux">Linux</option>
+                </select>
             </div>
 
             <div class="form-group">
@@ -246,27 +274,46 @@
 
         <!-- Requirement I: Accessible Route Planning -->
         <div class="survey-container accessible-route">
-            <div class="survey-title">PART 1: Accessible Route Planning</div>
+            <h4 class="survey-title">2. Test Case: Accessible Route Planning</h4>
 
             <div class="scenario">
                 <strong>Proposed Scenario:</strong> "You want to visit a friend who lives in the city center for a
-                coffee. You haven't been there in a while, and you want to make sure the route is easy for you to take."
+                coffee. You require wheelchair accessibility and would like to find a route that meets your needs."
             </div>
 
             <div class="tasks">
-                <p><strong>Tasks to attempt:</strong></p>
-                <div class="task"><strong>Task 1:</strong> Open Public Transport App and search for a route from your home
-                    location to the city center.</div>
-                <div class="task"><strong>Task 2:</strong> Check if you can apply any filters to make sure your route
-                    avoids stairs and includes ramps or elevators.</div>
-                <div class="task"><strong>Task 3:</strong> Look at the different route options, select the one that
-                    seems most accessible and then start the navigation.</div>
+                <h4 class="section-title">Tasks to attempt:</h4>
+                <div class="task"><strong>Task 1:</strong> Open Google Maps and search for a route from your home
+                    location to the city center. Look for the wheelchair accessible routes option and enable
+                    it.</div>
+                <div class="task"><strong>Task 2: </strong>Explore the accessible route information provided and check
+                    if it includes details about elevator availability, ramps, or other accessibility features.</div>
+                <div class="task"><strong>Task 3: </strong>Find and use the "Report an accessibility issue" feature to
+                    report a hypothetical accessibility problem on the route</div>
             </div>
 
-            <h3 class="section-title">Survey - Complete the following questions based on your experience</h3>
+            <h4 class="section-title">Survey - Complete the following questions based on your experience:</h4>
 
             <div class="question">
-                1. How easy was it to find the route planning feature in Public Transport App?
+                1. Were you able to find and enable the wheelchair accessible routes option?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp2-yes" name="rp2" value="yes">
+                        <label for="rp2-yes">Yes, easily</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp2-yes-time" name="rp2" value="yes-time">
+                        <label for="rp2-yes-time">Yes, but it took some time</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp2-no" name="rp2" value="no">
+                        <label for="rp2-no">No, I couldn't find it</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                2. How easy was it to find the wheelchair accessible route option in Google Maps?
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="rp1-easy" name="rp1" value="easy">
@@ -288,41 +335,23 @@
             </div>
 
             <div class="question">
-                2. Were you able to find the accessibility options for route planning?
-                <div class="options">
-                    <div class="option">
-                        <input type="checkbox" id="rp2-yes" name="rp2" value="yes">
-                        <label for="rp2-yes">Yes, easily</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" id="rp2-yes-time" name="rp2" value="yes-time">
-                        <label for="rp2-yes-time">Yes, but it took some time</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" id="rp2-no" name="rp2" value="no">
-                        <label for="rp2-no">No, I couldn't find them</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="question">
-                3. Which of these accessibility filters were you able to find? (select all that apply)
+                3. What specific accessibility information was provided about the route? (select all that apply)
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="rp3-wheelchair" name="rp3" value="wheelchair">
-                        <label for="rp3-wheelchair">Wheelchair accessible routes</label>
+                        <label for="rp3-wheelchair">Wheelchair accessible paths</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="rp3-elevators" name="rp3" value="elevators">
-                        <label for="rp3-elevators">Routes with elevators</label>
+                        <label for="rp3-elevators">Elevator availability</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="rp3-stairs" name="rp3" value="stairs">
-                        <label for="rp3-stairs">Routes avoiding stairs</label>
+                        <input type="checkbox" id="rp3-entrances" name="rp3" value="entrances">
+                        <label for="rp3-entrances">Accessible entrances/exits</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="rp3-none" name="rp3" value="none">
-                        <label for="rp3-none">None of these</label>
+                        <label for="rp3-none">No specific accessibility information</label>
                     </div>
                 </div>
             </div>
@@ -350,7 +379,7 @@
             </div>
 
             <div class="question">
-                5. Were you able to compare different route options based on accessibility?
+                5. Were you able to find and use the "Report an accessibility issue" feature?
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="rp5-yes" name="rp5" value="yes">
@@ -362,13 +391,13 @@
                     </div>
                     <div class="option">
                         <input type="checkbox" id="rp5-no" name="rp5" value="no">
-                        <label for="rp5-no">No, I couldn't compare them</label>
+                        <label for="rp5-no">No, I couldn't find it</label>
                     </div>
                 </div>
             </div>
 
             <div class="question">
-                6. Did the app provide information about accessible entrances at your destination?
+                6. Did the app provide information about accessible entrances or facilities at your destination?
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="rp6-yes" name="rp6" value="yes">
@@ -386,19 +415,23 @@
             </div>
 
             <div class="question">
-                7. Were you able to start navigation for your chosen accessible route?
+                7. How would you rate the process of reporting an accessibility issue?
                 <div class="options">
                     <div class="option">
-                        <input type="checkbox" id="rp7-yes" name="rp7" value="yes">
-                        <label for="rp7-yes">Yes, without issues</label>
+                        <input type="checkbox" id="rp7-easy" name="rp7" value="easy">
+                        <label for="rp7-easy">Simple and straightforward</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="rp7-difficulty" name="rp7" value="difficulty">
-                        <label for="rp7-difficulty">Yes, but with some difficulty</label>
+                        <input type="checkbox" id="rp7-moderate" name="rp7" value="moderate">
+                        <label for="rp7-moderate">Moderately easy</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="rp7-no" name="rp7" value="no">
-                        <label for="rp7-no">No, I couldn't start navigation</label>
+                        <input type="checkbox" id="rp7-difficult" name="rp7" value="difficult">
+                        <label for="rp7-difficult">Difficult or confusing</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp7-na" name="rp7" value="na">
+                        <label for="rp7-na">N/A - Couldn't find the feature</label>
                     </div>
                 </div>
             </div>
@@ -443,28 +476,38 @@
 
         <!-- Requirement II: Configurable Alerts -->
         <div class="survey-container configurable-alerts">
-            <div class="survey-title">PART 2: Configurable Alerts</div>
+            <div class="survey-title">3. Test Case: Configurable Alerts</div>
 
             <div class="scenario">
-                <strong>Proposed Scenario:</strong> "You started to use this app regularly to visit your doctor. Since
-                there are often changes in elevator availability and service times, you want the app to keep you
-                informed automatically so you don't get surprised by service disruptions"
+                <strong>Proposed Scenario:</strong> "You use Google Maps regularly for your commute. You want to stay
+                informed about transit updates, especially those that can affect accessibility, like elevator
+                maintenance or service changes."
             </div>
 
             <div class="tasks">
-                <p><strong>Tasks to attempt:</strong></p>
-                <div class="task"><strong>Task 1:</strong> Open Public Transport App and find and find where you can configure
-                    the alert settings.</div>
-                <div class="task"><strong>Task 2:</strong> Try to set up alerts that will notify you if the route
-                    changes or if there's a disruption, especially one that affects elevators or access points.</div>
-                <div class="task"><strong>Task 3:</strong> Try to simulate or test one of the alerts, to see if it works
-                    properly and you will notice it during your trip.</div>
+                <h4 class="section-title">Tasks to attempt:</h4>
+
+                <div class="task">
+                    <strong>Task 1:</strong> Open Google Maps and try to find where to turn on notifications related to
+                    public transport.
+                </div>
+
+                <div class="task">
+                    <strong>Task 2:</strong> Search for a train or metro station and check if you can find real time
+                    accessibility information alerts or notifications like elevators or step-free access.
+                </div>
+
+                <div class="task">
+                    <strong>Task 3:</strong> Plan a trip using public transport and try to save the route. Check if
+                    there is any way to get updates or alerts for this route.
+                </div>
             </div>
 
-            <h3 class="section-title">Survey</h3>
+
+            <h4 class="section-title">Survey - Complete the following questions based on your experience:</h4>
 
             <div class="question">
-                1. Were you able to find the alert configuration settings in Public Transport App?
+                1. Were you able to find where to configure public transport notifications?
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="ca1-yes" name="ca1" value="yes">
@@ -493,8 +536,8 @@
                         <label for="ca2-elevators">Elevator outages</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="ca2-disruptions" name="ca2" value="disruptions">
-                        <label for="ca2-disruptions">Service disruptions</label>
+                        <input type="checkbox" id="ca2-service" name="ca2" value="service">
+                        <label for="ca2-service">Service disruptions</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="ca2-access" name="ca2" value="access">
@@ -503,6 +546,10 @@
                     <div class="option">
                         <input type="checkbox" id="ca2-none" name="ca2" value="none">
                         <label for="ca2-none">None of these</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca2-na" name="ca2" value="na">
+                        <label for="ca2-na">N/A - I couldn't find any information</label>
                     </div>
                 </div>
             </div>
@@ -534,87 +581,69 @@
             </div>
 
             <div class="question">
-                4. Were you able to set up alerts specifically for accessibility features (like elevator outages)?
+                4. Could you find a way to get alerts for transit delays or service issues on a specific route?
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="ca4-yes" name="ca4" value="yes">
-                        <label for="ca4-yes">Yes, easily</label>
+                        <label for="ca4-yes">Yes, easily configured</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="ca4-limited" name="ca4" value="limited">
-                        <label for="ca4-limited">Yes, but with limited options</label>
+                        <input type="checkbox" id="ca4-partial" name="ca4" value="partial">
+                        <label for="ca4-partial">Partially – found some options but not complete</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="ca4-no" name="ca4" value="no">
-                        <label for="ca4-no">No, this option wasn't available</label>
+                        <label for="ca4-no">No, couldn’t find this option</label>
                     </div>
                 </div>
             </div>
 
             <div class="question">
-                5. Were you able to successfully test or simulate an alert?
-                <div class="options">
-                    <div class="option">
-                        <input type="checkbox" id="ca5-yes" name="ca5" value="yes">
-                        <label for="ca5-yes">Yes, it worked as expected</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" id="ca5-partial" name="ca5" value="partial">
-                        <label for="ca5-partial">Partially - the alert worked but not as expected</label>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" id="ca5-no" name="ca5" value="no">
-                        <label for="ca5-no">No, I couldn't test/simulate an alert</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="question">
-                6. If you tested an alert, was it noticeable enough for someone with disabilities or impairments?
+                5. Was the notifications information easy to read and understand?
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="ca6-very" name="ca6" value="very">
-                        <label for="ca6-very">Very noticeable</label>
+                        <label for="ca6-very">Yes, very accessible</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="ca6-somewhat" name="ca6" value="somewhat">
-                        <label for="ca6-somewhat">Somewhat noticeable</label>
+                        <label for="ca6-somewhat">Somewhat accessible</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="ca6-not" name="ca6" value="not">
-                        <label for="ca6-not">Not noticeable enough</label>
+                        <label for="ca6-not">Not accessible enough</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="ca6-na" name="ca6" value="na">
-                        <label for="ca6-na">N/A - couldn't test an alert</label>
+                        <label for="ca6-na">N/A – didn’t find any transit info</label>
                     </div>
                 </div>
             </div>
 
             <div class="question">
-                7. How easy was it to save your alert configurations?
+                6. How useful were the updates or notifications for someone with accessibility needs?
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="ca7-very" name="ca7" value="very">
-                        <label for="ca7-very">Very easy</label>
+                        <label for="ca7-very">Very helpful</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="ca7-somewhat" name="ca7" value="somewhat">
-                        <label for="ca7-somewhat">Somewhat easy</label>
+                        <label for="ca7-somewhat">Somewhat helpful</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="ca7-difficult" name="ca7" value="difficult">
-                        <label for="ca7-difficult">Difficult</label>
+                        <input type="checkbox" id="ca7-not" name="ca7" value="not">
+                        <label for="ca7-not">Not helpful</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="ca7-na" name="ca7" value="na">
-                        <label for="ca7-na">N/A - couldn't configure alerts</label>
+                        <label for="ca7-na">N/A – couldn’t find updates</label>
                     </div>
                 </div>
             </div>
 
             <div class="question">
-                8. What accessibility barriers did you encounter when trying to configure alerts? (select all that
+                7. What accessibility barriers did you encounter when trying to configure alerts? (select all that
                 apply)
                 <div class="options">
                     <div class="option">
@@ -630,35 +659,30 @@
                         <label for="ca8-text">Text too small or hard to read</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="ca8-options" name="ca8" value="options">
-                        <label for="ca8-options">Limited alert options</label>
+                        <input type="checkbox" id="ca8-limited" name="ca8" value="limited">
+                        <label for="ca8-limited">Limited alert options</label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="ca8-none" name="ca8" value="none">
                         <label for="ca8-none">None</label>
                     </div>
-                    <div class="option">
-                        <input type="checkbox" id="ca8-other" name="ca8" value="other">
-                        <label for="ca8-other">Other:</label>
-                        <input type="text" id="ca8-other-text" name="ca8-other-text"
-                            style="width: 60%; margin-left: 10px;">
-                    </div>
                 </div>
             </div>
 
             <div class="extra-question">
-                <div>What improvements would you suggest for the alert system to better serve users with accessibility
-                    needs?</div>
+                <div>What improvements would you suggest for configurable alerts and transit updates to better serve
+                    users with accessibility needs?</div>
                 <textarea placeholder="Type your answer here..."></textarea>
             </div>
+
         </div>
 
         <!-- Overall Feedback -->
-        <div class="survey-container">
-            <div class="survey-title">Overall Feedback</div>
+        <div class="survey-container configurable-alerts">
+            <h4 class="survey-title">4. Overall Feedback</h4>
 
             <div class="question">
-                1. Based on your experience, how would you rate Public Transport App for accessibility on a scale of 1-5?
+                1. Based on your experience, how would you rate Google Maps for accessibility on a scale of 1-5?
                 <div class="options">
                     <div class="option">
                         <input type="checkbox" id="of1-1" name="of1" value="1">
@@ -684,14 +708,20 @@
             </div>
 
             <div class="question">
-                2. What was the most difficult aspect of using Public Transport App with the simulated disability?
+                2. What was the most difficult aspect of using Google Maps?
                 <textarea placeholder="Type your answer here..."></textarea>
             </div>
 
             <div class="question">
-                3. What features would you like to see added to make Public Transport App more accessible?
+                3. What features would you like to see added to make Google Maps more accessible?
                 <textarea placeholder="Type your answer here..."></textarea>
             </div>
 
             <div class="form-footer">
-                <button type="submit" class="btn">Submit Feedback
+                <button type="submit" class="btn">Submit Feedback</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
