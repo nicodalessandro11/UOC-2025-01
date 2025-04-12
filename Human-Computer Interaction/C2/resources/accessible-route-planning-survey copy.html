@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Testing Survey - Google Maps Accessibility</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .logo {
+            height: 60px;
+            margin-bottom: 20px;
+            /* Replace with actual logo path */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .introduction {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #73EDFF;
+            /* UOC Corporate Blue */
+        }
+
+        .survey-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .survey-title {
+            background-color: #000078;
+            /* UOC Corporate Blue */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: #000078;
+            /* UOC Corporate Blue */
+        }
+
+        .scenario {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+
+        .tasks {
+            margin: 20px 0;
+        }
+
+        .task {
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .options {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .extra-question {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+        }
+
+        textarea {
+            min-height: 80px;
+        }
+
+        /* UOC Colors */
+        .accessible-route {
+            border-left: 4px solid #73EDFF;
+            /* Masterbrand */
+        }
+
+        .configurable-alerts {
+            border-left: 4px solid #73EDFF;
+            /* Masterbrand */
+        }
+
+        .form-footer {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #000078;
+            /* UOC Corporate Blue */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #00005a;
+        }
+
+        .required {
+            color: #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="uoc-logo.png" alt="UOC Logo" class="logo">
+            <h1>User Testing Survey - Google Maps Accessibility</h1>
+        </div>
+
+        <!-- Introduction -->
+        <div class="introduction">
+            <h4 class="survey-title">1. Introduction</h4>
+            <p>Hello, and thank you for participating in this user testing session!</p>
+            <p>Before we begin, I want to highlight that <strong>we are testing the application and not you</strong>.
+                There are no right or wrong answers, and your honest feedback is extremely valuable to us. This session
+                will help us understand how to improve public transportation applications to make them more accessible
+                and user-friendly.</p>
+            <p>This session will take approximately 45-50 minutes, you only need to complete a few tasks using the
+                Google Maps application and then complete the survey.</p>
+
+            <h4 class="section-title">Preliminary Questions</h4>
+            <p>First, I'd like to ask you a few simple questions:</p>
+
+            <div class="form-group">
+                <label for="user-age">Name:</label>
+                <input type="text" id="user-occupation" name="user-occupation">
+            </div>
+
+            <div class="form-group">
+                <label for="user-age">Age:</label>
+                <input type="number" id="user-age" name="user-age" min="1" max="120">
+            </div>
+
+            <div class="form-group">
+                <label for="user-occupation">Occupation:</label>
+                <input type="text" id="user-occupation" name="user-occupation">
+            </div>
+
+            <div class="form-group">
+                <label for="device-type">Device Type:</label>
+                <select id="device-type" name="device-type">
+                    <option value="" disabled selected>Select device type</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="computer">Computer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="device-os">Operating System:</label>
+                <select id="device-os" name="device-os">
+                    <option value="" disabled selected>Select operating system</option>
+                    <!-- Mobile OS options -->
+                    <option value="android">Android</option>
+                    <option value="ios">iOS</option>
+                    <!-- Computer OS options -->
+                    <option value="windows">Windows</option>
+                    <option value="macos">macOS</option>
+                    <option value="linux">Linux</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="user-impairments">Do you have any disabilities or impairments that affect how you use mobile
+                    applications? (Optional)</label>
+                <input type="text" id="user-impairments" name="user-impairments">
+            </div>
+
+            <div class="form-group">
+                <label for="tech-comfort">How would you rate your comfort level with technology on a scale of 1-5, with
+                    5 being very comfortable?</label>
+                <select id="tech-comfort" name="tech-comfort">
+                    <option value="">Please select</option>
+                    <option value="1">1 - Not comfortable at all</option>
+                    <option value="2">2 - Slightly comfortable</option>
+                    <option value="3">3 - Moderately comfortable</option>
+                    <option value="4">4 - Very comfortable</option>
+                    <option value="5">5 - Extremely comfortable</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="transport-frequency">How often do you use public transportation?</label>
+                <select id="transport-frequency" name="transport-frequency">
+                    <option value="">Please select</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="never">Never</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="previous-apps">Have you used any public transportation mobile applications before? If yes,
+                    which ones?</label>
+                <textarea id="previous-apps" name="previous-apps"></textarea>
+            </div>
+
+        </div>
+
+        <!-- Requirement I: Accessible Route Planning -->
+        <div class="survey-container accessible-route">
+            <h4 class="survey-title">2. Test Case: Accessible Route Planning</h4>
+
+            <div class="scenario">
+                <strong>Proposed Scenario:</strong> "You want to visit a friend who lives in the city center for a
+                coffee. You require wheelchair accessibility and would like to find a route that meets your needs."
+            </div>
+
+            <div class="tasks">
+                <h4 class="section-title">Tasks to attempt:</h4>
+                <div class="task"><strong>Task 1:</strong> Open Google Maps and search for a route from your home
+                    location to the city center. Look for the wheelchair accessible routes option and enable
+                    it.</div>
+                <div class="task"><strong>Task 2: </strong>Explore the accessible route information provided and check
+                    if it includes details about elevator availability, ramps, or other accessibility features.</div>
+                <div class="task"><strong>Task 3: </strong>Find and use the "Report an accessibility issue" feature to
+                    report a hypothetical accessibility problem on the route</div>
+            </div>
+
+            <h4 class="section-title">Survey - Complete the following questions based on your experience:</h4>
+
+            <div class="question">
+                1. Were you able to find and enable the wheelchair accessible routes option?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp2-yes" name="rp2" value="yes">
+                        <label for="rp2-yes">Yes, easily</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp2-yes-time" name="rp2" value="yes-time">
+                        <label for="rp2-yes-time">Yes, but it took some time</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp2-no" name="rp2" value="no">
+                        <label for="rp2-no">No, I couldn't find it</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                2. How easy was it to find the wheelchair accessible route option in Google Maps?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp1-easy" name="rp1" value="easy">
+                        <label for="rp1-easy">Very easy</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp1-moderate" name="rp1" value="moderate">
+                        <label for="rp1-moderate">Moderately easy</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp1-difficult" name="rp1" value="difficult">
+                        <label for="rp1-difficult">Difficult</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp1-very-difficult" name="rp1" value="very-difficult">
+                        <label for="rp1-very-difficult">Very difficult</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                3. What specific accessibility information was provided about the route? (select all that apply)
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp3-wheelchair" name="rp3" value="wheelchair">
+                        <label for="rp3-wheelchair">Wheelchair accessible paths</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp3-elevators" name="rp3" value="elevators">
+                        <label for="rp3-elevators">Elevator availability</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp3-entrances" name="rp3" value="entrances">
+                        <label for="rp3-entrances">Accessible entrances/exits</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp3-none" name="rp3" value="none">
+                        <label for="rp3-none">No specific accessibility information</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                4. How clear was the information provided about route accessibility?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp4-very" name="rp4" value="very">
+                        <label for="rp4-very">Very clear</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp4-somewhat" name="rp4" value="somewhat">
+                        <label for="rp4-somewhat">Somewhat clear</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp4-not" name="rp4" value="not">
+                        <label for="rp4-not">Not clear at all</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp4-none" name="rp4" value="none">
+                        <label for="rp4-none">No accessibility information was provided</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                5. Were you able to find and use the "Report an accessibility issue" feature?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp5-yes" name="rp5" value="yes">
+                        <label for="rp5-yes">Yes, easily</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp5-difficult" name="rp5" value="difficult">
+                        <label for="rp5-difficult">Yes, but it was difficult</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp5-no" name="rp5" value="no">
+                        <label for="rp5-no">No, I couldn't find it</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                6. Did the app provide information about accessible entrances or facilities at your destination?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp6-yes" name="rp6" value="yes">
+                        <label for="rp6-yes">Yes, detailed information</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp6-limited" name="rp6" value="limited">
+                        <label for="rp6-limited">Yes, but limited information</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp6-no" name="rp6" value="no">
+                        <label for="rp6-no">No information provided</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                7. How would you rate the process of reporting an accessibility issue?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp7-easy" name="rp7" value="easy">
+                        <label for="rp7-easy">Simple and straightforward</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp7-moderate" name="rp7" value="moderate">
+                        <label for="rp7-moderate">Moderately easy</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp7-difficult" name="rp7" value="difficult">
+                        <label for="rp7-difficult">Difficult or confusing</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp7-na" name="rp7" value="na">
+                        <label for="rp7-na">N/A - Couldn't find the feature</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                8. What accessibility barriers did you encounter during this task? (select all that apply)
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp8-text" name="rp8" value="text">
+                        <label for="rp8-text">Text too small or hard to read</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp8-contrast" name="rp8" value="contrast">
+                        <label for="rp8-contrast">Poor contrast between elements</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp8-buttons" name="rp8" value="buttons">
+                        <label for="rp8-buttons">Buttons or touch targets too small</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp8-complex" name="rp8" value="complex">
+                        <label for="rp8-complex">Complex navigation or too many steps</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp8-none" name="rp8" value="none">
+                        <label for="rp8-none">None</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp8-other" name="rp8" value="other">
+                        <label for="rp8-other">Other:</label>
+                        <input type="text" id="rp8-other-text" name="rp8-other-text"
+                            style="width: 60%; margin-left: 10px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra-question">
+                <div>What improvements would you suggest for the accessible route planning feature?</div>
+                <textarea placeholder="Type your answer here..."></textarea>
+            </div>
+        </div>
+
+        <!-- Requirement II: Configurable Alerts -->
+        <div class="survey-container configurable-alerts">
+            <div class="survey-title">3. Test Case: Configurable Alerts</div>
+
+            <div class="scenario">
+                <strong>Proposed Scenario:</strong> "You use Google Maps regularly for your commute. You want to stay
+                informed about transit updates, especially those that can affect accessibility, like elevator
+                maintenance or service changes."
+            </div>
+
+            <div class="tasks">
+                <h4 class="section-title">Tasks to attempt:</h4>
+
+                <div class="task">
+                    <strong>Task 1:</strong> Open Google Maps and try to find where to turn on notifications related to
+                    public transport.
+                </div>
+
+                <div class="task">
+                    <strong>Task 2:</strong> Search for a train or metro station and check if you can find real time
+                    accessibility information alerts or notifications like elevators or step-free access.
+                </div>
+
+                <div class="task">
+                    <strong>Task 3:</strong> Plan a trip using public transport and try to save the route. Check if
+                    there is any way to get updates or alerts for this route.
+                </div>
+            </div>
+
+
+            <h4 class="section-title">Survey - Complete the following questions based on your experience:</h4>
+
+            <div class="question">
+                1. Were you able to find where to configure public transport notifications?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca1-yes" name="ca1" value="yes">
+                        <label for="ca1-yes">Yes, easily</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca1-difficulty" name="ca1" value="difficulty">
+                        <label for="ca1-difficulty">Yes, but with difficulty</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca1-no" name="ca1" value="no">
+                        <label for="ca1-no">No, I couldn't find them</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                2. Which of these alert types were you able to configure? (select all that apply)
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca2-route" name="ca2" value="route">
+                        <label for="ca2-route">Route changes</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca2-elevators" name="ca2" value="elevators">
+                        <label for="ca2-elevators">Elevator outages</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca2-service" name="ca2" value="service">
+                        <label for="ca2-service">Service disruptions</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca2-access" name="ca2" value="access">
+                        <label for="ca2-access">Accessibility-related alerts</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca2-none" name="ca2" value="none">
+                        <label for="ca2-none">None of these</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca2-na" name="ca2" value="na">
+                        <label for="ca2-na">N/A - I couldn't find any information</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                3. Could you customize how you receive alerts? (select all that apply)
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca3-visual" name="ca3" value="visual">
+                        <label for="ca3-visual">Visual notifications</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca3-sound" name="ca3" value="sound">
+                        <label for="ca3-sound">Sound alerts</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca3-vibration" name="ca3" value="vibration">
+                        <label for="ca3-vibration">Vibration/haptic feedback</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca3-frequency" name="ca3" value="frequency">
+                        <label for="ca3-frequency">Alert frequency options</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca3-none" name="ca3" value="none">
+                        <label for="ca3-none">No customization options found</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                4. Could you find a way to get alerts for transit delays or service issues on a specific route?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca4-yes" name="ca4" value="yes">
+                        <label for="ca4-yes">Yes, easily configured</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca4-partial" name="ca4" value="partial">
+                        <label for="ca4-partial">Partially – found some options but not complete</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca4-no" name="ca4" value="no">
+                        <label for="ca4-no">No, couldn’t find this option</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                5. Was the notifications information easy to read and understand?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca6-very" name="ca6" value="very">
+                        <label for="ca6-very">Yes, very accessible</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca6-somewhat" name="ca6" value="somewhat">
+                        <label for="ca6-somewhat">Somewhat accessible</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca6-not" name="ca6" value="not">
+                        <label for="ca6-not">Not accessible enough</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca6-na" name="ca6" value="na">
+                        <label for="ca6-na">N/A – didn’t find any transit info</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                6. How useful were the updates or notifications for someone with accessibility needs?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca7-very" name="ca7" value="very">
+                        <label for="ca7-very">Very helpful</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca7-somewhat" name="ca7" value="somewhat">
+                        <label for="ca7-somewhat">Somewhat helpful</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca7-not" name="ca7" value="not">
+                        <label for="ca7-not">Not helpful</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca7-na" name="ca7" value="na">
+                        <label for="ca7-na">N/A – couldn’t find updates</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                7. What accessibility barriers did you encounter when trying to configure alerts? (select all that
+                apply)
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca8-find" name="ca8" value="find">
+                        <label for="ca8-find">Difficult to find alert settings</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca8-complex" name="ca8" value="complex">
+                        <label for="ca8-complex">Complex or confusing interface</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca8-text" name="ca8" value="text">
+                        <label for="ca8-text">Text too small or hard to read</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca8-limited" name="ca8" value="limited">
+                        <label for="ca8-limited">Limited alert options</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca8-none" name="ca8" value="none">
+                        <label for="ca8-none">None</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra-question">
+                <div>What improvements would you suggest for configurable alerts and transit updates to better serve
+                    users with accessibility needs?</div>
+                <textarea placeholder="Type your answer here..."></textarea>
+            </div>
+
+        </div>
+
+        <!-- Overall Feedback -->
+        <div class="survey-container configurable-alerts">
+            <h4 class="survey-title">4. Overall Feedback</h4>
+
+            <div class="question">
+                1. Based on your experience, how would you rate Google Maps for accessibility on a scale of 1-5?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="of1-1" name="of1" value="1">
+                        <label for="of1-1">1 - Poor</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="of1-2" name="of1" value="2">
+                        <label for="of1-2">2 - Fair</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="of1-3" name="of1" value="3">
+                        <label for="of1-3">3 - Average</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="of1-4" name="of1" value="4">
+                        <label for="of1-4">4 - Good</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="of1-5" name="of1" value="5">
+                        <label for="of1-5">5 - Excellent</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                2. What was the most difficult aspect of using Google Maps?
+                <textarea placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                3. What features would you like to see added to make Google Maps more accessible?
+                <textarea placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="form-footer">
+                <button type="submit" class="btn">Submit Feedback</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
