@@ -1,0 +1,115 @@
+/* UI Tokens – Are You Query-ous Style Guide */
+
+/* Colors */
+:root {
+  --primary-green: #4CAF50;
+  --primary-blue: #1468B1;
+  --primary-brown: #A36322;
+  --white: #FFFFFF;
+  --light-grey: #F2F2F2;
+  --dark-grey: #333333;
+  --accent-yellow: #FFD33D;
+  --accent-teal: #00BFA5;
+
+  /* Typography */
+  --font-family-base: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-size-h1: 32px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-body: 16px;
+  --font-size-caption: 14px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-xxl: 64px;
+
+  /* Border radius */
+  --border-radius: 6px;
+}
+
+/* Typography */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  color: var(--dark-grey);
+  background-color: var(--white);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+p {
+  font-size: var(--font-size-body);
+  font-weight: 400;
+}
+
+.caption {
+  font-size: var(--font-size-caption);
+  color: #666666;
+}
+
+/* Buttons */
+.button {
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  font-size: var(--font-size-body);
+  cursor: pointer;
+  text-align: center;
+}
+
+.button-primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+}
+
+.button-secondary {
+  background-color: var(--white);
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+}
+
+.button-accent {
+  background-color: var(--accent-yellow);
+  color: var(--dark-grey);
+  border: none;
+}
+
+.button-disabled {
+  background-color: var(--light-grey);
+  color: #AAAAAA;
+  cursor: not-allowed;
+}
+
+/* Utility spacing classes */
+.mt-s { margin-top: var(--space-s); }
+.mt-m { margin-top: var(--space-m); }
+.mt-l { margin-top: var(--space-l); }
+
+.mb-s { margin-bottom: var(--space-s); }
+.mb-m { margin-bottom: var(--space-m); }
+.mb-l { margin-bottom: var(--space-l); }
+
+/* Dark Mode Support */
+body.dark-mode {
+  background-color: #121212;
+  color: var(--light-grey);
+}
