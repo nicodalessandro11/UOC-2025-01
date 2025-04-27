@@ -1,0 +1,14 @@
+Material reading CAT2
+To-do date: 23 Apr at 23:59
+Indications
+Before carrying out the CAT2, and in addition to the materials indicated above, it is recommended to have studied the following sections:
+
+Didactic module 2: Catalog of patterns
+
+  M2. Section 5. Responsibility assignment patterns
+
+  M2. Section 6. Design patterns
+
+Didactic module 3: Practical case of application of patterns
+
+  M3. Section 5. Design of the domain layer
