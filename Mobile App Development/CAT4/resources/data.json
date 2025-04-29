@@ -1,0 +1,57 @@
+[
+    {
+        "item_id": 2,
+        "item_type": 1,
+        "item_question": "A wireless device is one that can communicate...",
+        "item_sem_id": 1,
+        "item_link": "",
+        "item_correct_answer": 2,
+        "item_answer1": "via fiber optic cable",
+        "item_answer2": "via a wireless network",
+        "item_answer3": "via ethernet cables"
+    },
+    {
+        "item_id": 3,
+        "item_type": 1,
+        "item_question": "Which category of device is not considered mobile?",
+        "item_sem_id": 1,
+        "item_link": "https://mobile-app-dev-uoc.github.io",
+        "item_correct_answer": 4,
+        "item_answer1": "smartphone",
+        "item_answer2": "tablet",
+        "item_answer3": "wearable device"
+    },
+    {
+        "item_id": 4,
+        "item_type": 1,
+        "item_question": "Which operating system does Samsung use for some of its wearable devices?",
+        "item_sem_id": 2,
+        "item_link": "https://mobile-app-dev-uoc.github.io",
+        "item_correct_answer": 3,
+        "item_answer1": "MacOS",
+        "item_answer2": "Windows",
+        "item_answer3": "Tizen"
+    },
+    {
+        "item_id": 5,
+        "item_type": 1,
+        "item_question": "What is the latest available version of the Android operating system?",
+        "item_sem_id": 2,
+        "item_link": "",
+        "item_correct_answer": 2,
+        "item_answer1": "10",
+        "item_answer2": "16",
+        "item_answer3": "13"
+    },
+    {
+        "item_id": 6,
+        "item_type": 1,
+        "item_question": "A web application is...",
+        "item_sem_id": 2,
+        "item_link": "",
+        "item_correct_answer": 1,
+        "item_answer1": "a website specifically optimized for a mobile device",
+        "item_answer2": "an application installed on a mobile device with access to hardware",
+        "item_answer3": "Not used for anything in communications"
+    }
+]
