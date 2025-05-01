@@ -9,3 +9,5 @@ temp/
 # ignore hidden files
 *.vscode
 *.DS_Store
+
+*.iso
