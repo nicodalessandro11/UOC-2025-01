@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Testing Survey - Public Transport App Prototype for Accessibility</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .logo {
+            height: 60px;
+            margin-bottom: 20px;
+            /* Replace with actual logo path */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .introduction {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #73EDFF;
+            /* UOC Corporate Blue */
+        }
+
+        .survey-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .survey-title {
+            background-color: #000078;
+            /* UOC Corporate Blue */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: #000078;
+            /* UOC Corporate Blue */
+        }
+
+        .scenario {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+
+        .tasks {
+            margin: 20px 0;
+        }
+
+        .task {
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .options {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .extra-question {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+        }
+
+        textarea {
+            min-height: 80px;
+        }
+
+        /* UOC Colors */
+        .accessible-route {
+            border-left: 4px solid #73EDFF;
+            /* Masterbrand */
+        }
+
+        .configurable-alerts {
+            border-left: 4px solid #73EDFF;
+            /* Masterbrand */
+        }
+
+        .form-footer {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #000078;
+            /* UOC Corporate Blue */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #00005a;
+        }
+
+        .required {
+            color: #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="uoc-logo.png" alt="UOC Logo" class="logo">
+            <h1>User Testing Survey - Public Transport App Prototype</h1>
+        </div>
+
+        <!-- Introduction -->
+        <div class="introduction">
+            <h4 class="survey-title">1. Introduction</h4>
+            <p>Hello, and thank you for participating in this user testing session!</p>
+            <p>Before we begin, I want to highlight that <strong>we are testing the application and not you</strong>.
+                There are no right or wrong answers, and your honest feedback is extremely valuable to us. This session
+                will help us understand how to improve public transportation applications to make them more accessible
+                and user-friendly.</p>
+            <p>This session will take approximately 45-50 minutes, you only need to complete a few tasks using the
+                Google Maps application and then complete the survey.</p>
+
+            <h4 class="section-title">Preliminary Questions</h4>
+            <p>First, I'd like to ask you a few simple questions:</p>
+
+            <div class="form-group">
+                <label for="user-age">Name:</label>
+                <input type="text" id="user-occupation" name="user-occupation">
+            </div>
+
+            <div class="form-group">
+                <label for="user-age">Age:</label>
+                <input type="number" id="user-age" name="user-age" min="1" max="120">
+            </div>
+
+            <div class="form-group">
+                <label for="user-occupation">Occupation:</label>
+                <input type="text" id="user-occupation" name="user-occupation">
+            </div>
+
+            <div class="form-group">
+                <label for="device-type">Device Type:</label>
+                <select id="device-type" name="device-type">
+                    <option value="" disabled selected>Select device type</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="computer">Computer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="device-os">Operating System:</label>
+                <select id="device-os" name="device-os">
+                    <option value="" disabled selected>Select operating system</option>
+                    <!-- Mobile OS options -->
+                    <option value="android">Android</option>
+                    <option value="ios">iOS</option>
+                    <!-- Computer OS options -->
+                    <option value="windows">Windows</option>
+                    <option value="macos">macOS</option>
+                    <option value="linux">Linux</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="user-impairments">Do you have any disabilities or impairments that affect how you use mobile
+                    applications? (Optional)</label>
+                <input type="text" id="user-impairments" name="user-impairments">
+            </div>
+
+            <div class="form-group">
+                <label for="tech-comfort">How would you rate your comfort level with technology on a scale of 1-5, with
+                    5 being very comfortable?</label>
+                <select id="tech-comfort" name="tech-comfort">
+                    <option value="">Please select</option>
+                    <option value="1">1 - Not comfortable at all</option>
+                    <option value="2">2 - Slightly comfortable</option>
+                    <option value="3">3 - Moderately comfortable</option>
+                    <option value="4">4 - Very comfortable</option>
+                    <option value="5">5 - Extremely comfortable</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="transport-frequency">How often do you use public transportation?</label>
+                <select id="transport-frequency" name="transport-frequency">
+                    <option value="">Please select</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="never">Never</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="previous-apps">Have you used any public transportation mobile applications before? If yes,
+                    which ones?</label>
+                <textarea id="previous-apps" name="previous-apps"></textarea>
+            </div>
+
+        </div>
+
+        <!-- Requirement I: Accessible Route Planning -->
+        <div class="survey-container accessible-route">
+            <h4 class="survey-title">2. Test Case: Accessible Route Planning</h4>
+
+            <div class="scenario">
+                <strong>Proposed Scenario:</strong> "You use public transport every day. You want to get alerts if
+                something
+                changes, like elevator problems or delays. You also want to check old alerts and test if alerts work
+                well on your
+                phone."
+            </div>
+
+
+
+            <div class="tasks">
+                <h4 class="section-title">Tasks to attempt:</h4>
+
+                <div class="task">
+                    <strong>Task 1:</strong> Start by planning a route from your current location to a destination in
+                    the city
+                    center (imaginary because the proposed scenario is not real). Try to adjust the route options to
+                    match your
+                    accessibility needs, such as using a
+                    wheelchair, avoiding
+                    stairs, and staying away from crowded areas.
+                </div>
+
+                <div class="task">
+                    <strong>Task 2:</strong> Review the route options provided. Choose one route and try to check if it
+                    includes
+                    step-by-step information about accessibility features, such as elevators or ramps.
+                </div>
+
+                <div class="task">
+                    <strong>Task 3:</strong> Imagine that you find an accessibility problem on the route. Try to report
+                    this issue
+                    through the app.
+                </div>
+            </div>
+
+
+            <h4 class="section-title">Survey - Complete the following questions based on your experience:</h4>
+
+            <div class="question">
+                1. Were you able to adjust the route according to your accessibility needs?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp1-yes-easy" name="rp1" value="yes-easy">
+                        <label for="rp1-yes-easy">Yes, it was easy</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp1-yes-hard" name="rp1" value="yes-hard">
+                        <label for="rp1-yes-hard">Yes, but it took time or was confusing</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp1-no" name="rp1" value="no">
+                        <label for="rp1-no">No, I couldn’t do it</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                2. Was the accessibility information in the route details clear and easy to understand?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp2-clear" name="rp2" value="clear">
+                        <label for="rp2-clear">Yes, very clear</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp2-somewhat" name="rp2" value="somewhat">
+                        <label for="rp2-somewhat">Somewhat clear</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp2-not" name="rp2" value="not">
+                        <label for="rp2-not">No, it was confusing or missing</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                3. What type of accessibility information did you see in the route? (Select all that apply)
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp3-ramps" name="rp3" value="ramps">
+                        <label for="rp3-ramps">Ramp availability</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp3-elevators" name="rp3" value="elevators">
+                        <label for="rp3-elevators">Elevator information</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp3-no-stairs" name="rp3" value="no-stairs">
+                        <label for="rp3-no-stairs">No stairs shown</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp3-other" name="rp3" value="other">
+                        <label for="rp3-other">Other:</label>
+                        <input type="text" id="rp3-other-text" name="rp3-other-text"
+                            style="width: 60%; margin-left: 10px;">
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp3-none" name="rp3" value="none">
+                        <label for="rp3-none">I didn’t see any accessibility information</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                4. Did you find a way to report an accessibility problem on the route?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp4-yes" name="rp4" value="yes">
+                        <label for="rp4-yes">Yes, and it was easy to use</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp4-yes-difficult" name="rp4" value="yes-difficult">
+                        <label for="rp4-yes-difficult">Yes, but it was difficult or confusing</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp4-no" name="rp4" value="no">
+                        <label for="rp4-no">No, I couldn’t find the option</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                5. How would you describe the process of writing and sending the accessibility report?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp5-simple" name="rp5" value="simple">
+                        <label for="rp5-simple">Very simple and clear</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp5-average" name="rp5" value="average">
+                        <label for="rp5-average">Moderate. I understood it but needed to think a bit</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp5-hard" name="rp5" value="hard">
+                        <label for="rp5-hard">Complicated or confusing</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                6. Did the confirmation message after sending your report make you feel that your feedback was received?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp6-yes" name="rp6" value="yes">
+                        <label for="rp6-yes">Yes, it was clear</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp6-somewhat" name="rp6" value="somewhat">
+                        <label for="rp6-somewhat">Somewhat but it could be clearer</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp6-no" name="rp6" value="no">
+                        <label for="rp6-no">No, it wasn’t clear at all</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                7. Did you experience any barriers during this task? (Select all that apply)
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="rp7-text" name="rp7" value="text">
+                        <label for="rp7-text">Text too small or hard to read</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp7-icons" name="rp7" value="icons">
+                        <label for="rp7-icons">Icons or labels not clear</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp7-navigation" name="rp7" value="navigation">
+                        <label for="rp7-navigation">Hard to find what I needed</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp7-none" name="rp7" value="none">
+                        <label for="rp7-none">None</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="rp7-other" name="rp7" value="other">
+                        <label for="rp7-other">Other:</label>
+                        <input type="text" id="rp7-other-text" name="rp7-other-text"
+                            style="width: 60%; margin-left: 10px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra-question">
+                <div>What would you improve in the accessible route planning feature?</div>
+                <textarea placeholder="Type your answer here..."></textarea>
+            </div>
+
+        </div>
+
+        <!-- Requirement II: Configurable Alerts -->
+        <div class="survey-container configurable-alerts">
+            <div class="survey-title">3. Test Case: Configurable Alerts</div>
+
+            <div class="scenario">
+                <strong>Proposed Scenario:</strong> "You use public transport every day. You want to get alerts if
+                something
+                changes, like elevator problems or delays. You also want to check old alerts and test if alerts work
+                well on your
+                phone."
+            </div>
+
+
+            <div class="tasks">
+                <h4 class="section-title">Tasks to attempt:</h4>
+
+                <div class="task">
+                    <strong>Task 1:</strong> Go to the alerts section in the app. Try to choose what kind of alerts you
+                    want to get,
+                    like problems with elevators or delays in service.
+                </div>
+
+                <div class="task">
+                    <strong>Task 2:</strong> Try to change how you receive alerts. For example, make them visual, sound,
+                    or
+                    vibration.
+                </div>
+
+                <div class="task">
+                    <strong>Task 3:</strong> Use the option to send a test alert. Check if the alert appears on your
+                    screen.
+                </div>
+
+                <div class="task">
+                    <strong>Task 4:</strong> Look at the alert history. Try to find an old alert and read what it says.
+                </div>
+            </div>
+
+
+
+            <h4 class="section-title">Survey - Complete the following questions based on your experience:</h4>
+
+            <div class="question">
+                1. Were you able to find where to choose the alert types?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca1-yes" name="ca1" value="yes">
+                        <label for="ca1-yes">Yes, easily</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca1-difficulty" name="ca1" value="difficulty">
+                        <label for="ca1-difficulty">Yes, but it was difficult</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca1-no" name="ca1" value="no">
+                        <label for="ca1-no">No, I couldn’t find it</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                2. What alert types did you select? (Select all that apply)
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca2-route" name="ca2" value="route">
+                        <label for="ca2-route">Route changes</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca2-elevator" name="ca2" value="elevator">
+                        <label for="ca2-elevator">Elevator problems</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca2-delay" name="ca2" value="delay">
+                        <label for="ca2-delay">Delays or service problems</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca2-weather" name="ca2" value="weather">
+                        <label for="ca2-weather">Weather alerts</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca2-none" name="ca2" value="none">
+                        <label for="ca2-none">None</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                3. Were you able to change how you get the alerts? (Select all that you tried)
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca3-visual" name="ca3" value="visual">
+                        <label for="ca3-visual">Visual (on screen)</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca3-sound" name="ca3" value="sound">
+                        <label for="ca3-sound">Sound</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca3-vibration" name="ca3" value="vibration">
+                        <label for="ca3-vibration">Vibration</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca3-none" name="ca3" value="none">
+                        <label for="ca3-none">I didn’t see these options</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                4. Did you use the test alert option?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca4-yes" name="ca4" value="yes">
+                        <label for="ca4-yes">Yes, and it worked well</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca4-yes-difficult" name="ca4" value="yes-difficult">
+                        <label for="ca4-yes-difficult">Yes, but it was hard to understand</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca4-no" name="ca4" value="no">
+                        <label for="ca4-no">No, I didn’t use it</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                5. Did you find the alert history and read past alerts?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca5-yes" name="ca5" value="yes">
+                        <label for="ca5-yes">Yes, and it was easy</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca5-hard" name="ca5" value="hard">
+                        <label for="ca5-hard">Yes, but it was not easy</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca5-no" name="ca5" value="no">
+                        <label for="ca5-no">No, I didn’t find it</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                6. Did the alerts make you feel more informed or safe?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca6-yes" name="ca6" value="yes">
+                        <label for="ca6-yes">Yes, very helpful</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca6-some" name="ca6" value="some">
+                        <label for="ca6-some">Somewhat helpful</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca6-no" name="ca6" value="no">
+                        <label for="ca6-no">No, not really helpful</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                7. Did you have any problems with this part of the app? (Select all that apply)
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="ca7-find" name="ca7" value="find">
+                        <label for="ca7-find">Hard to find the alert options</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca7-understand" name="ca7" value="understand">
+                        <label for="ca7-understand">Hard to understand what to do</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca7-text" name="ca7" value="text">
+                        <label for="ca7-text">Text was small or unclear</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca7-none" name="ca7" value="none">
+                        <label for="ca7-none">No problems</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="ca7-other" name="ca7" value="other">
+                        <label for="ca7-other">Other:</label>
+                        <input type="text" id="ca7-other-text" name="ca7-other-text"
+                            style="width: 60%; margin-left: 10px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra-question">
+                <div>What would you improve in the alert settings or alert history?</div>
+                <textarea placeholder="Type your answer here..."></textarea>
+            </div>
+
+
+        </div>
+
+        <!-- Overall Feedback -->
+        <div class="survey-container configurable-alerts">
+            <h4 class="survey-title">4. Overall Feedback</h4>
+
+            <div class="question">
+                1. Based on your experience, how would you rate this App Prototype for accessibility on a scale of 1-5?
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="of1-1" name="of1" value="1">
+                        <label for="of1-1">1 - Poor</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="of1-2" name="of1" value="2">
+                        <label for="of1-2">2 - Fair</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="of1-3" name="of1" value="3">
+                        <label for="of1-3">3 - Average</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="of1-4" name="of1" value="4">
+                        <label for="of1-4">4 - Good</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="of1-5" name="of1" value="5">
+                        <label for="of1-5">5 - Excellent</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                2. What was the most difficult aspect of using the Prototype?
+                <textarea placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="question">
+                3. What features would you like to see added to make the Prototype more accessible?
+                <textarea placeholder="Type your answer here..."></textarea>
+            </div>
+
+            <div class="form-footer">
+                <button type="submit" class="btn">Submit Feedback</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
