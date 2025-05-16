@@ -1,0 +1,58 @@
+Heuristic evaluation
+Methods
+
+Stage
+
+Research
+Definition
+Generation
+Assessment
+Type
+Quantitative
+Qualitative
+With users
+Expert
+Classification
+Duration
+Short
+Difficulty
+Medium
+Expertise
+High
+Participants
+Few
+What is it?
+Heuristic evaluation consists of studying and evaluating the interface by one or more usability experts, according to a set of previously established rules and design principles. These principles that serve as the basis for evaluation are called heuristics (in the case of interaction design projects, they are also called usability principles).
+
+Materials
+Digital or physical tools for taking notes. The use of heuristic checklists is highly recommended.
+
+When?
+Heuristic evaluation can be done at different times in the user-centred design process. It can be carried out during the design process, once the first proposals have been elaborated and the first prototypes of the system have been built, since this will allow for correcting aspects of usability before fully developing it. It can also be done at the launch stage, once developed, to diagnose usability elements that were not visible in previous stages.
+
+In the case of redesign projects (in which we start from a pre-existing project), it is highly recommended to carry out the heuristic evaluation at the beginning of the project, on the design from which it is based, since the results will help define some guidelines for the new proposal.
+
+How?
+To carry out a heuristic evaluation, the following tasks must be performed:
+
+Prepare or select the basic checklist.
+Evaluate the design.
+Analyze the results and prepare the design recommendations.
+Advantages
+It is a reasonably quick method to carry out.
+When more than one expert participates, although each one provides different opinions, they do so based on the same set of rules.
+It is inexpensive when compared to methods that involve users.
+It allows evaluating at the beginning of the process.
+Furthermore, it can be used with other assessment techniques.
+Drawbacks
+The evaluation is especially conditioned both by the set of heuristics chosen and by the experts.
+The previous experience and mental model of each evaluator can bias the results.
+It requires knowledge and experience for the evaluators.
+Depending on how it is conducted, detailed issues may be identified but larger issues may be overlooked.
+Notes
+There are checklists from different authors. These are some of the most used:
+
+http://www.nngroup.com/articles/ten-usability-heuristics/
+http://www.nosolousabilidad.com/articulos/heuristica.htm
+Incredibly Useful Web Design Checklists and Questionnaires: http://www.smashingmagazine.com/2009/06/29/45-incredibly-useful-web-design-checklists-and-questionnaires/
+Online heuristic evaluation: http://www.uxcheck.co/
